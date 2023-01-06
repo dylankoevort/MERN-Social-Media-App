@@ -7,4 +7,11 @@
 - Node.js
 
 ---
+
+## TODO
+- Fix Bugs
+- Customise
+- Add Features
+
+---
 Dylan Koevort
