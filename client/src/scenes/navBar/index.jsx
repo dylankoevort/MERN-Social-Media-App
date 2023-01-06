@@ -76,7 +76,9 @@ const Navbar = () => {
       {/* DESKTOP NAV */}
       {isNonMobileScreens ? (
         <FlexBetween gap="2rem">
-          <IconButton onClick={() => dispatch(setMode())}> {/* Changes the light/dark mode value */}
+          <IconButton onClick={() => dispatch(setMode())}>
+            {" "}
+            {/* Changes the light/dark mode value */}
             {theme.palette.mode === "dark" ? (
               <DarkMode sx={{ fontSize: "25px" }} />
             ) : (
@@ -111,7 +113,8 @@ const Navbar = () => {
             </Select>
           </FormControl>
         </FlexBetween>
-      ) : {/* Displays icon of menu on smaller screens */} (
+      ) : (
+        /* Displays icon of menu on smaller screens */
         <IconButton
           onClick={() => setIsMobileMenuToggled(!isMobileMenuToggled)}
         >
