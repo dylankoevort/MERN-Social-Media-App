@@ -27,7 +27,7 @@ export const createPost = async (req, res) => {
 };
 
 // READ
-export const getFeedPosts = async (res) => {
+export const getFeedPosts = async (req, res) => {
   try {
     const post = await Post.find();
     res.status(200).json(post);
